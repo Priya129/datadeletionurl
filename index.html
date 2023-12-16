@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion Request Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      background-color: #e6e6fa;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      background-color: #f4f4f4;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      background-color: #f4f4f4;
+      margin-top: 40px;
+    }
+  </style>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <h2>Welcome to DearDiary-MyJournal</h2>
+
+    <p>
+      At DearDiary-MyJournal, we value your privacy and are committed to ensuring the security of your personal data. If
+      you wish to request the deletion of your data, please use the form below to submit your request.
+    </p>
+
+    <p>
+      Before submitting your request, we recommend reviewing our <a
+        href="https://doc-hosting.flycricket.io/deardiary-my-journal/638ba92c-636f-43de-b33d-b6d2fb003750/privacy" target="_blank">Privacy
+        Policy</a> to understand the types of data that are deleted or retained and any applicable retention periods.
+    </p>
+  </div>
+
+  <form action="https://formspree.io/f/mdoqnogd" method ="post">
+    <h2>Data Deletion Request Form</h2>
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message requesting data deletion:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit Data Deletion Request</button>
+  </form>
+
+  <p>
+    <strong>Note:</strong> This form is for submitting data deletion requests only. For more information on the types of
+    data that are deleted or retained, and any additional retention periods, please refer to our <a
+      href="https://doc-hosting.flycricket.io/deardiary-my-journal/638ba92c-636f-43de-b33d-b6d2fb003750/privacy" target="_blank">Privacy
+      Policy</a>.
+  </p>
+
+
+</body>
+
+</html>
